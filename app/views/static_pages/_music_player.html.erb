@@ -1,0 +1,72 @@
+<section class="player">
+
+  <%#　戻るボタン　%>
+  <%= image_tag "arrow.png", class:"arrow-btn icon hide" %>
+
+  <%#　メニューアイコン　%>
+  <%= image_tag "menu.png", class:"menu-btn icon hide" %>
+  
+  <h1 class="current-track-name">music1</h1>
+  <p class="current-track-artist">artist1</p>
+  <%= image_tag "music1.jpg", class:"cover hide" %>
+
+  <div class="sound-bar">
+    <input type="range" class="sound-bar-range" value="0" />
+    <p class="current-time hide">00 : 00</p>
+    <p class="duration hide">00 : 00</p>
+  </div>    
+  
+  <div class="control-panel">
+    <span class="fas fa-redo"></span>
+    <div class="main">
+      <i class="fas fa-backward active"></i>
+      <i class="fas fa-play active"></i>
+      <i class="fas fa-pause"></i>
+      <i class="fas fa-forward active"></i>
+    </div>
+    <input type="range" class="volume-range" max="1" value="1" step="0.1" />
+    <span class="fas fa-volume-up"></span>
+  </div>
+
+</section>
+
+
+<section class="track-list">
+  <%= image_tag "arrow.png", class:"arrow-btn icon" %>
+  <h1 class="title">プレイリスト</h1>
+  <div class="track active">
+    <div class="track-cover">
+      <%= image_tag "music1.jpg" %>
+      <i class="fas fa-pause"></i>
+    </div>
+    <p class="name">music1</p>
+  </div>
+  <div class="track">
+    <div class="track-cover">
+      <%= image_tag "music2.jpg" %>
+      <i class="fas fa-pause"></i>
+    </div>
+    <p class="name">music2</p>
+  </div>
+  <div class="track">
+    <div class="track-cover">
+      <%= image_tag "music3.jpg" %>
+      <i class="fas fa-pause"></i>
+    </div>
+    <p class="name">music3</p>
+  </div>
+  <div class="track">
+    <div class="track-cover">
+      <%= image_tag "music4.jpg" %>
+      <i class="fas fa-pause"></i>
+    </div>
+    <p class="name">music4</p>
+  </div>
+  <div class="track">
+    <div class="track-cover">
+      <%= image_tag "music5.jpg" %>
+      <i class="fas fa-pause"></i>
+    </div>
+    <p class="name">music5</p>
+  </div>
+</section>

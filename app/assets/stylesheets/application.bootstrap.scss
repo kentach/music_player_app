@@ -1,2 +1,41 @@
 @import 'bootstrap/scss/bootstrap';
 @import 'bootstrap-icons/font/bootstrap-icons';
+
+@import "music_player";
+@import "top";
+@import "recently_played";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: linear-gradient(
+    0deg,
+    rgba(13, 5, 3, 1) 0%,
+    rgba(128, 9, 9, 1) 100%
+  );
+  --font: #fff;
+  --mainColor: #fff;
+  --subColor: #a9a9a9;
+  --player: rgba(0, 0, 0, 0.5);
+  --shadow: 0 15px 40px var(--player);
+}
+
+html {
+  background: var(--background);
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  height: 100vh; 
+  max-width: 375px;
+  position: relative;
+  background: var(--background);
+  color: var(--font);
+}
