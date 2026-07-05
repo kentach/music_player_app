@@ -1,0 +1,15 @@
+<section class="home">
+  <div class="slider">
+    <%= image_tag "music1.jpg", class:"active" %>
+    <%= image_tag "music2.jpg" %>
+    <%= image_tag "music3.jpg" %>
+    <%= image_tag "music4.jpg" %>
+    <%= image_tag "music5.jpg" %>
+  </div>
+
+  <%= render "static_pages/recently_played_music" %>
+  <%= render "static_pages/recommendation" %>
+  <%= render "static_pages/music_player" %>
+</section>
+
+<audio src="" id="audio-src"></audio>
